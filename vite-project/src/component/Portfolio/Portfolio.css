@@ -113,7 +113,7 @@ body.active-modal {
 }
 .modal-text button {
   margin-right: 20px;
-  color: #ff014f;
+  color: #000;
 }
 .modal-text button i {
   margin-left: 10px;
@@ -126,7 +126,7 @@ body.active-modal {
   height: 50px;
   text-align: center;
   border-radius: 50%;
-  padding: 0 0;
+  padding: 13px 14px;
   font-size: 20px;
 }
 .modal-text button.close-modal i {
@@ -149,4 +149,19 @@ body.active-modal {
   .modal .left {
     padding: 0;
   }
+}
+.close_btn_shadow{
+  padding: 15px 15px;
+  border-radius: 6px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  color: #000;
+  transition: 0.5s;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+}
+.close_btn_shadow:hover{
+  background: #313bac;
+  color: white;
+  transform: translateY(-2px);
 }
