@@ -11,35 +11,31 @@ const Skills = () => {
           </div>
         <ol className="list">
           <li className="item">
-            <h3 > Front-End</h3>
+            <h3 > Programming Languages:</h3>
             <span>
-              ReactJS, Angular, Redux, HTML, CSS, React Native, Flutter, NPM,
-              Ionic, BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents
+            C++,C, JavaScript, SQL,Solidity
             </span>
           </li>
           <li className="item">
-            <h3>Back-End</h3>
+            <h3>Relevant Concepts:</h3>
             <span className='skill-names'>
-              NodeJS, Java Spring, .NET, ExpressJS, GraphQL, ApolloServer,
-              MySQL, MongoDB, DynamoDB, DigitalOcean, AWS S3, MS SQL
+            Data Structures And Algorithms,OOPS, DBMS
             </span>
           </li>
           <li className="item">
-            <h3>Languages</h3>
-            <span>JavaScript, Java, Python, C#, C, C++, TypeScript, Go</span>
+            <h3>Knowledgeable Domains:</h3>
+            <span>ReactJS, Redux,HTML,CSS,Tailwind, Blockchain,Material UI ,Smart Contracts ,TypeScript</span>
           </li>
           <li className="item">
-            <h3>Back-End</h3>
+            <h3>Tools:</h3>
             <span>
-              NodeJS, Java Spring, .NET, ExpressJS, GraphQL, ApolloServer,
-              MySQL, MongoDB, DynamoDB, DigitalOcean, AWS S3, MS SQL
+            Linux, MacOS, Windows, Git ,Github , Jest Unit testing
             </span>
           </li>
           <li className="item">
-            <h3>Back-End</h3>
+            <h3>Soft Skills and Interests:</h3>
             <span>
-              NodeJS, Java Spring, .NET, ExpressJS, GraphQL, ApolloServer,
-              MySQL, MongoDB, DynamoDB, DigitalOcean, AWS S3, MS SQL
+            Leading the team, Event Management, Public Speaking,Flautist ,Realistic-Artist,Sports
             </span>
           </li>
         </ol>

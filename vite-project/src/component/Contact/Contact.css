@@ -36,23 +36,27 @@
 .Contact textarea {
   margin-top: 10px;
 }
-.Contact .right button {
+.contactform_btn_shadow {
   
-  width: 30%;
-  padding: 1rem 2rem;
+ 
+  
+  padding: 1.5rem 2rem;
+  gap: 2px;
   border-radius: 10px;
   border: none;
-  background-color: rgb(62, 73, 122);
-  font-weight: 500;
-  color: #000;
-  outline: none;
-  margin: 2rem 0 0 0;
-  transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  font-size: medium;
+  font-weight: bold;
+  transition: 0.3s all ease;
   cursor: pointer;
+  color: #000;
+  transition: 0.5s;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
 }
-.Contact .right button:hover {
+.contactform_btn_shadow:hover {
+  background: #313bac;
   color: white;
-  background-color:   #313bac;
+  transform: translateY(-2px);
   
 }
 .Contact .right button i {

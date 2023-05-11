@@ -6,7 +6,7 @@ const Footer = () => {
       <footer>
         <div className='conatiner text-center top'>
          
-          <p>© 2023. All rights reserved by Chandan.</p>
+          <p>© 2023. All rights reserved by Chandan Gunaga.</p>
         </div>
       </footer>
     </>

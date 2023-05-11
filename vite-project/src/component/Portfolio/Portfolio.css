@@ -60,7 +60,9 @@
 body.active-modal {
   overflow-y: hidden;
 }
-
+.content{
+  padding: 0px 30px;
+}
 .btn-modal {
   padding: 10px 20px;
   display: block;

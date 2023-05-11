@@ -19,16 +19,26 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .flex{
   display: flex;
   justify-content: center;
+}
+.c_flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .f_flex {
   display: flex;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: inherit;
+}
+
+.contact_btn_shadow:hover{
+  color: white;
 }
 li {
   list-style: none;
@@ -100,7 +110,7 @@ h1 {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 100px;
+  grid-gap: 80px;
 }
 p {
   color: #3c3e41;
@@ -117,6 +127,7 @@ input {
   padding: 17px;
   border-radius: 8px;
   outline: none;
+  font-size: 16px;
   border: 3px solid #e2e8ec;
   margin-bottom: 20px;
 }
@@ -131,9 +142,36 @@ footer p {
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
   }
   .left,
   .right {
     width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  .contact_btn_shadow{
+    margin-top: 8px;
+  }
+  .same-row{
+    flex-direction: column;
+    
+  }
+  .row{
+    width: 100%;
+  }
+  .contactform_btn_shadow{
+    padding: 1rem 1rem;
+  }
+  .right{
+    padding: 0px !important; 
   }
 }

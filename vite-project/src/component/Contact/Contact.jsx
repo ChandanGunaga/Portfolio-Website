@@ -71,7 +71,7 @@ const Contact = () => {
             </div> */}
 
             <div className='right '>
-              <form onSubmit={formSubmit}>
+              <form  action="https://formspree.io/f/mayzkqoq" method="POST">
                 <div className='same-row f_flex'>
                   <div className='input row'>
                     <span>Your Name</span>
@@ -94,7 +94,7 @@ const Contact = () => {
                   <span>Your Message</span>
                   <textarea cols='30' rows='10' name='message' value={data.message} onChange={InputEvent}></textarea>
                 </div>
-                <button className="flex resume_btn_shadow">
+                <button className="flex contactform_btn_shadow" type="submit">
                   SEND MESSAGE &nbsp; <SendIcon/>
                 </button>
               </form>

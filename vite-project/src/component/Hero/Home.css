@@ -169,6 +169,7 @@
   }
  
 }
+
 @media (max-width: 968px){
   .hero .right_img {
     width: 100%;
@@ -206,7 +207,7 @@
   border-radius: 6px;
   transition: 0.3s all ease;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   color: #000;
   transition: 0.5s;
@@ -217,6 +218,10 @@
   background: #313bac;
   color: white;
   transform: translateY(-2px);
+}
+.contact-links{
+  text-decoration: none;
+  color: inherit;
 }
 
 @keyframes scaleImage{
