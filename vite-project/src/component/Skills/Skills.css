@@ -1,0 +1,38 @@
+.skills {
+  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.item{
+    margin-bottom: 8px;
+    font-size: 35px;
+}
+.skills .list {
+  list-style: none;
+  width: 80%;
+}
+
+.list span {
+  font-size: 19px;
+}
+
+@media only screen and (max-width: 600px) {
+  .skills {
+    text-align: center;
+  }
+  .list {
+    padding: 0;
+  }
+
+  .skills h2 {
+    font-size: 30px;
+  }
+}
