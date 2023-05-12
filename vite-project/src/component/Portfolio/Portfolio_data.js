@@ -1,45 +1,47 @@
+import port from "./image/port.png";
+import weather from "./image/weather.png"
+import amazon from "./image/amazon.png";
+import discord from "./image/discord.png"
+import devdetect from "./image/devdetectdark.png";
+
+
+
 const Portfolio_data = [
   {
     id: 1,
-    category: "DEVELOPMENT",
-    totalLike: "600",
-    title: "The services provide for design ",
-    image: "./image/portfolio-01.jpg",
+    category: "REACT APPLICATION",
+    title: "Virtual-Learn-admin-dashboard",
+    image: port,
   },
   {
     id: 2,
-    category: "APPLICATION",
-    totalLike: "750",
-    title: "Mobile app landing design & maintain",
-    image: "./image/portfolio-02.jpg",
+    category: "DEVELOPMENT",
+    title: "Weather-app",
+    image: weather,
   },
   {
     id: 3,
-    category: "PHOTOSHOP",
-    totalLike: "630",
-    title: "Logo design creativity & Application ",
-    image: "./image/portfolio-03.jpg",
+    category: "DEVELOPMENT",
+    title: "Portfolio Website ",
+    image: port,
   },
   {
     id: 4,
-    category: "FIGMA",
-    totalLike: "360",
-    title: "Mobile app landing design & Services",
-    image: "./image/portfolio-04.jpg",
+    category: "DEVELOPMENT",
+    title: "amazon-clone",
+    image: amazon,
   },
   {
     id: 5,
-    category: "WEB DESIGN",
-    totalLike: "280",
-    title: "Design for tecnology & services",
-    image: "./image/portfolio-05.jpg",
+    category: "WEB DEVELOPMENT",
+    title: "DevDetective",
+    image: devdetect,
   },
   {
     id: 6,
-    category: "WEB DESIGN",
-    totalLike: "690",
-    title: "App for tecnology & services",
-    image: "./image/portfolio-06.jpg",
+    category: "WEB DEVELOPMENT",
+    title: "Discord-clone-UI ",
+    image: discord,
   },
 ]
 export default Portfolio_data
