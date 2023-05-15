@@ -14,9 +14,9 @@ const Card = (props) => {
   }
   return (
     <>
-      <div className='box btn_shadow '>
+      <div className='box btn_shadow ' onClick={toggleModal}>
         <div className='img'>
-          <img src={props.image} alt='' onClick={toggleModal} />
+          <img src={props.image} alt=''  />
         </div>
         <div className='category d_flex'>
           <span onClick={toggleModal}>{props.category}</span>

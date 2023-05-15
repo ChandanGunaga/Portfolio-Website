@@ -42,9 +42,7 @@ const Home = () => {
             </h2>
 
             <p>
-              I use animation as a third dimension by which to simplify
-              experiences and kuiding thro each and every interaction. I’m not
-              adding motion just to spruce things up, but doing it in ways that.
+            SDE | Frontend React Developer | DSA Practitioner with Proficiency in C++
             </p>
 
             <div className="hero_btn d_flex">
