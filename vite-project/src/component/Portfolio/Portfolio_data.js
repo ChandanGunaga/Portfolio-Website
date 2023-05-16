@@ -3,6 +3,7 @@ import weather from "./image/weather.png"
 import amazon from "./image/amazon.png";
 import discord from "./image/discord.png"
 import devdetect from "./image/devdetectdark.png";
+import crowdfund from "./image/crowdfund.png";
 
 
 
@@ -27,7 +28,7 @@ const Portfolio_data = [
   },
   {
     id: 4,
-    category: "DEVELOPMENT",
+    category: "REACT DEVELOPMENT",
     title: "amazon-clone",
     image: amazon,
   },
@@ -42,6 +43,12 @@ const Portfolio_data = [
     category: "WEB DEVELOPMENT",
     title: "Discord-clone-UI ",
     image: discord,
+  },
+  {
+    id: 7,
+    category: "BLOCKCHAIN APPLICATION",
+    title: "CrowdFunding-Blockchain",
+    image: crowdfund,
   },
 ]
 export default Portfolio_data

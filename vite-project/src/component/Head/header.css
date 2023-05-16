@@ -50,6 +50,10 @@ header ul li a:hover {
   box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
   transition: 0.5s;
 }
+
+.close, .nav-links-mobile {
+  display: none;
+}
 @media (max-width: 768px) {
   header ul {
     padding-top: 30px;
@@ -79,12 +83,13 @@ header ul li a:hover {
   .close,
   .open {
     position: absolute;
-    top: 35px;
+    top: 15px;
     right: 20px;
     color: #ff014f;
     display: block;
     font-size: 25px;
     z-index: 999;
+    cursor: pointer;
   }
   .close {
     right: 45%;
@@ -97,6 +102,7 @@ header ul li a:hover {
     width: 60px;
     height: 60px;
     line-height: 60px;
+    cursor: pointer;
   }
   .header.active {
     height: 10vh;

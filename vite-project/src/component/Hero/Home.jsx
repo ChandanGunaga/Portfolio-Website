@@ -4,6 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
+import EmailIcon from '@mui/icons-material/Email';
 import { Typewriter } from "react-simple-typewriter";
 import circle from "../pic/circle.svg";
 import react from "../pic/react.png";
@@ -26,7 +27,7 @@ const Home = () => {
             <h1>
               Hi, I’m <span>Chandan</span>
             </h1>
-            <h2>
+            <h2 className="typewriter-head">
               a
               <span>
                 <Typewriter
@@ -42,7 +43,7 @@ const Home = () => {
             </h2>
 
             <p>
-            SDE | Frontend React Developer | DSA Practitioner with Proficiency in C++
+            Trying to understand the language of 0s and 1s | Software development engineer | Frontend React Developer | MERN Stack | DSA Practitioner with Proficiency in C++
             </p>
 
             <div className="hero_btn d_flex">
@@ -69,6 +70,11 @@ const Home = () => {
                   <a href="https://www.instagram.com/chandangunaga/" target="_blank">
                     <button className="contact_btn_shadow">
                       <InstagramIcon fontSize="large" />
+                    </button>
+                  </a>
+                  <a href="mailto:chandangunaga1307@gmail.com" target="_blank">
+                    <button className="contact_btn_shadow">
+                      <EmailIcon fontSize="large" />
                     </button>
                   </a>
                 </div>

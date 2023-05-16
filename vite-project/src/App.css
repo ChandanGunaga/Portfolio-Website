@@ -70,6 +70,7 @@ button {
 .btn_shadow {
  
 }
+
 .btn_shadow:hover {
   background: #313bac;
   color: white;
@@ -86,7 +87,7 @@ button {
   width: 50%;
 }
 .top {
-  margin-top: 65px;
+  margin-top: 25px;
 }
 .mtop {
   margin-top: 40px;
@@ -133,7 +134,7 @@ input {
 }
 /*----------Footer---------*/
 footer {
-  margin: 8% 0 2% 0;
+  margin: 8% 0 0% 0;
 }
 footer p {
   margin-top: 30px;
@@ -147,6 +148,10 @@ footer p {
   .left,
   .right {
     width: 100%;
+  }
+  .footer-wrapper{
+    flex-direction: column;
+    gap: 30px;
   }
 }
 @media (max-width: 500px) {
@@ -174,4 +179,69 @@ footer p {
   .right{
     padding: 0px !important; 
   }
+  .footer-wrapper{
+    flex-direction: column;
+  }
+}
+
+.footer-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  gap: 30px;
+}
+footer{
+  background-color: rgb(203 211 223);
+  padding: 2rem;
+}
+.quote{
+  font-size: 3rem;
+  text-align:start
+}
+.quote-wrap{
+  text-align: left;
+
+}
+.red-text{
+  color: #ff014f;
+}
+.quote-auth{
+  margin-top: 30px;
+}
+
+.c-box{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.c-head{
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.c-details{
+ 
+  font-size: 13px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+}
+.button2{
+  display: flex;
+  gap: 8px;
+  padding: 1rem 0;
+}
+
+.contact_btn_shadow2{
+  width: 50px;
+  height: 50px;
+  padding: 7px 5px;
+  border-radius: 50%;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  color: #000;
+  transition: 0.5s;
+ 
 }

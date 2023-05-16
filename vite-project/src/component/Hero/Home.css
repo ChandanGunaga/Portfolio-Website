@@ -25,10 +25,10 @@
   color: #878e99;
   font-size: 18px;
   line-height: 30px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 .hero_btn {
-  margin-top: 15%;
+  margin-top: 12%;
 }
 .hero_btn h4 {
   font-weight: 500;
@@ -213,6 +213,9 @@
   transition: 0.5s;
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+}
+.typewriter-head{
+  height: 130px;
 }
 .resume_btn_shadow:hover {
   background: #313bac;

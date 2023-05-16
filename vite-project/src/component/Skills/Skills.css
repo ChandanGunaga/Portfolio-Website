@@ -5,7 +5,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  text-align: justify;
+ 
 }
 h3 {
   font-size: 24px;
@@ -23,10 +23,23 @@ h3 {
 .list span {
   font-size: 19px;
 }
-
+.skill-wrapper{
+  display: flex;
+  gap: 12px;
+} 
+.left-item{
+  padding: 2rem;
+}
+.devImg{
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  padding: 3rem;
+}
 @media only screen and (max-width: 600px) {
   .skills {
     text-align: center;
+   
   }
   .list {
     padding: 0;
@@ -34,5 +47,25 @@ h3 {
 
   .skills h2 {
     font-size: 30px;
+  }
+ .left-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+}
+@media (max-width:950px) {
+  .skill-wrapper{
+    flex-direction: column-reverse;
+  }
+  .right-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .devImg{
+    height: 80%;
+    width: 80%;
+    
   }
 }
