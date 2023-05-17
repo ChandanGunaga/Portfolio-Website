@@ -15,19 +15,19 @@ const Skills = () => {
             <ol className="list">
               <li className="item">
                 <h3> Programming Languages:</h3>
-                <span>C++,C, JavaScript, SQL,Solidity</span>
+                <span>C++,C, JavaScript, SQL,Solidity,Typescript</span>
               </li>
               <li className="item">
                 <h3>Relevant Concepts:</h3>
                 <span className="skill-names">
-                  Data Structures And Algorithms,OOPS, DBMS
+                  Data Structures And Algorithms,OOPS, DBMS,CN
                 </span>
               </li>
               <li className="item">
                 <h3>Knowledgeable Domains:</h3>
                 <span>
                   ReactJS, Redux,HTML,CSS,Tailwind, Blockchain,Material UI
-                  ,Smart Contracts ,TypeScript
+                  ,Smart Contracts ,MERN Stack
                 </span>
               </li>
               <li className="item">

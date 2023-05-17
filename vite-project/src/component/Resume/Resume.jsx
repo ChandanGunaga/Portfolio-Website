@@ -79,13 +79,16 @@ const Resume = () => {
                   Mangalore,India
                 </h4>
                 <p>
-                  Project: Built a Car-showroom website with all the required
-                  functionalities using ReactJS, Javascript, MaterialUI
+                  Project: The React Car Showroom is a web application that
+                  allows users to browse and view information about various car
+                  models. It includes features such as a search function, filter
+                  options, and detailed car specifications. The application also
+                  provides a user-friendly interface for car dealers to manage
+                  their inventory and pricing information. 
                 </p>
                 <p>
-                  Outcome: Created features to enhance the user experience while
-                  ensuring the web design is optimized and responsive on all the
-                  devices.
+                  Outcome: Created features to enhance the user experience in ReactJS,
+                  Javascript, MaterialUI,HTML,CSS
                 </p>
               </VerticalTimelineElement>
 
@@ -105,7 +108,10 @@ const Resume = () => {
                   ◦ Project: Identified web based user interactions and
                   developed UI components via React concepts. Translated designs
                   and wire-frames into high quality code and wrote application
-                  interface code following ReactJs workflows
+                  interface code following ReactJs workflows.collaborated
+                  closely with the back-end development team to ensure that the
+                  front-end and back-end components of the application were
+                  tightly integrated and worked seamlessly together
                 </p>
                 <p>
                   ◦ Training: Had an intensive training in ReactJS, State
