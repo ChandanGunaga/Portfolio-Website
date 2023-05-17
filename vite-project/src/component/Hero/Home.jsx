@@ -15,7 +15,7 @@ import node from "../pic/node.png";
 import sass from "../pic/sass.png";
 import typescript from "../pic/typescript.png";
 import graphql from "../pic/graphql.png";
-import resume from "../../assets/Chandan_Gunaga_Resume (3).pdf";
+import resume from "../../assets/Chandan_Gunaga_Resume.pdf";
 
 const Home = () => {
   return (
