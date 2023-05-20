@@ -16,7 +16,7 @@ const Features = () => {
         id="features"
       >
         <div className="container">
-          <motion.div variants={textVariant2}  className="heading">
+          <motion.div variants={textVariant2}  className="heading feat-h">
             <h4>INTRODUCTION</h4>
             <h1>Brief Intro</h1>
           </motion.div>

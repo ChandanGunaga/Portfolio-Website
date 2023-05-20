@@ -8,6 +8,7 @@ import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
 import { motion } from "framer-motion";
 import { footerVariants, staggerContainer, textVariant2 } from "../../motion";
+import "./Resume.css"
 // import SchoolIcon from "@material-ui/icons/School";
 // import WorkIcon from "@material-ui/icons/Work";
 

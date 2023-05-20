@@ -17,10 +17,15 @@ import typescript from "../pic/typescript.png";
 import graphql from "../pic/graphql.png";
 import resume from "../../assets/Chandan_Gunaga_Resume.pdf";
 import { motion } from "framer-motion";
-import { fadeIn, slideIn, staggerContainer, zoomIn } from "../../motion";
+import {
+  fadeIn,
+  slideIn,
+  staggerContainer,
+  textVariant,
+  zoomIn,
+} from "../../motion";
 
 const Home = () => {
-  
   return (
     <>
       <section className="hero" id="home">
@@ -32,36 +37,37 @@ const Home = () => {
           className="container f_flex top"
         >
           <div className="left top">
-            <motion.h3 variants={fadeIn("right", "tween", 0.2, 1)}>
-              WELCOME TO MY WORLD
-            </motion.h3>
-            <motion.h1 variants={fadeIn("right", "tween", 0.2, 1)}>
-              Hi, I’m <span>Chandan</span>
-            </motion.h1>
-            <motion.h2
-              variants={fadeIn("right", "tween", 0.2, 1)}
-              className="typewriter-head"
-            >
-              a
-              <span>
-                <Typewriter
-                  words={[" Software Engineer.", " Developer.", " Leader."]}
-                  loop
-                  cursor
-                  cursorStyle="|"
-                  typeSpeed={70}
-                  deleteSpeed={50}
-                  delaySpeed={1000}
-                />
-              </span>
-            </motion.h2>
+            <motion.div variants={fadeIn("right", "tween", 0.4, 1)}>
+              <motion.h3 variants={textVariant(0.6)}>
+                WELCOME TO MY WORLD
+              </motion.h3>
+              <motion.h1 variants={textVariant(0.9)}>
+                Hi, I’m <span>Chandan</span>
+              </motion.h1>
+              <motion.h2
+                variants={textVariant(1.3)}
+                className="typewriter-head"
+              >
+                a
+                <span>
+                  <Typewriter
+                    words={[" Software Engineer.", " Developer.", " Leader."]}
+                    loop
+                    cursor
+                    cursorStyle="|"
+                    typeSpeed={70}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                  />
+                </span>
+              </motion.h2>
 
-            <motion.p variants={fadeIn("right", "tween", 0.2, 1)}>
-              Trying to understand the language of 0s and 1s | Software
-              development engineer | Frontend React Developer | MERN Stack | DSA
-              Practitioner with Proficiency in C++
-            </motion.p>
-
+              <motion.p variants={textVariant(1.5)}>
+                Trying to understand the language of 0s and 1s | Software
+                development engineer | Frontend React Developer | MERN Stack |
+                DSA Practitioner with Proficiency in C++
+              </motion.p>
+            </motion.div>
             <motion.div
               variants={fadeIn("up", "tween", 0.2, 1)}
               className="hero_btn d_flex"
@@ -112,7 +118,7 @@ const Home = () => {
               </div>
             </motion.div>
           </div>
-          <motion.div variants={zoomIn(0.3,1)} className="right">
+          <motion.div variants={zoomIn(0.3, 1)} className="right">
             <div className="right_img">
               <img src={circle} alt="" />
             </div>

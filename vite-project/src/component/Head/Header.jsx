@@ -1,50 +1,55 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.css";
 import logo from "../pic/logo1.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { motion } from "framer-motion";
+import { headerVariants } from "../../motion";
 
 const Header = () => {
-  window.addEventListener("scroll", function () {
-    const header = document.querySelector(".header");
-    header.classList.toggle("active", window.scrollY > 100);
-  });
+  // window.addEventListener("scroll", function () {
+  //   const header = document.querySelector(".header");
+  //   header.classList.toggle("active", window.scrollY > 100);
+  // });
+  const useHeaderShadow = () => {
+    const [headerShadow, setHeaderShadow] = useState(false);
+    //to handle shadow of header
+    useEffect(() => {
+      function handleScroll() {
+        if (window.scrollY > 0) {
+          setHeaderShadow(
+            "rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px"
+          );
+        } else {
+          setHeaderShadow("none");
+        }
+      }
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+
+    return headerShadow;
+  };
+  const headerShadow = useHeaderShadow();
   const [Mobile, setMobile] = useState(false);
 
-  const headerVariants = {
-    hidden: {
-      opacity: 0,
-      y: -50,
-      transition: {
-        type: "spring",
-        stiffness: 300,
-        damping: 140,
-      },
-    },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        stiffness: 80,
-        delay: 1,
-      },
-    },
-  };
   return (
     <>
-      <header className="header">
+      <header className="header" style={{ boxShadow: headerShadow }}>
         <motion.div
           variants={headerVariants}
           initial="hidden"
           whileInView="show"
           className="container d_flex"
         >
-          <div className="logo">
-            <img className="logo" src={logo} alt="" />
-          </div>
-
+          {" "}
+          <a href="#home">
+            <div className="logo">
+              <img className="logo" src={logo} alt="" />
+            </div>
+          </a>
           <div className="navlink">
             <ul
               className={Mobile ? "nav-links-mobile" : "link f_flex uppercase"}
@@ -58,14 +63,15 @@ const Header = () => {
                 <a href="#features">About</a>
               </li>
               <li>
+                <a href="#resume">experience</a>
+              </li>
+              <li>
                 <a href="#skills">skills</a>
               </li>
               <li>
                 <a href="#portfolio">projects</a>
               </li>
-              <li>
-                <a href="#resume">experience</a>
-              </li>
+
               <li>
                 <a href="#clients">achievements</a>
               </li>

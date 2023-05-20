@@ -21,11 +21,17 @@
   color: white;
   opacity: 1;
 } */
-
+.features{
+  background-color: #e7e7e7;
+  padding: 0px 0 2rem 0;
+}
 .a {
   height: 100%;
   display: flex;
   
+}
+.feat-h{
+  padding-top: 1rem;
 }
 
 .a-left {

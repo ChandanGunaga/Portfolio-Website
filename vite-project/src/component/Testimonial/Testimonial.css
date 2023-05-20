@@ -1,6 +1,10 @@
 .Testimonial h2 {
   margin: 15px 0 0 0;
 }
+.Testimonial{
+  background-color: #e7e7e7;
+  padding: 1rem 0;
+}
 
 .Testimonial .left {
   width: 35%;
