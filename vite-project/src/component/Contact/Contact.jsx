@@ -144,7 +144,7 @@ const Contact = () => {
                   className="flex contactform_btn_shadow"
                   type="submit"
                 >
-                  SEND MESSAGE &nbsp; <SendIcon />
+                  SEND MESSAGE &nbsp; <SendIcon fontSize=""/>
                 </motion.button>
               </motion.form>
             </div>
