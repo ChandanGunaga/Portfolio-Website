@@ -6,19 +6,28 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
+import { motion } from "framer-motion";
+import { footerVariants, staggerContainer, textVariant2 } from "../../motion";
 // import SchoolIcon from "@material-ui/icons/School";
 // import WorkIcon from "@material-ui/icons/Work";
 
 const Resume = () => {
   return (
     <>
-      <section className="Resume" id="resume">
+      <motion.section
+        variants={staggerContainer}
+        initial="hidden"
+        // viewport={{ once: false, amount: 0.25 }}
+        whileInView="show"
+        className="Resume"
+        id="resume"
+      >
         <div className="container top">
-          <div className="heading text-center">
+          <motion.div variants={textVariant2} className="heading text-center">
             <h4>MY JOURNEY INTO DEV</h4>
             <h1>Education & Experience</h1>
-          </div>
-          <div className="experience">
+          </motion.div>
+          <motion.div variants={footerVariants} className="experience">
             <VerticalTimeline lineColor="#3e497a">
               <VerticalTimelineElement
                 className="vertical-timeline-element--education"
@@ -84,11 +93,11 @@ const Resume = () => {
                   models. It includes features such as a search function, filter
                   options, and detailed car specifications. The application also
                   provides a user-friendly interface for car dealers to manage
-                  their inventory and pricing information. 
+                  their inventory and pricing information.
                 </p>
                 <p>
-                  Outcome: Created features to enhance the user experience in ReactJS,
-                  Javascript, MaterialUI,HTML,CSS
+                  Outcome: Created features to enhance the user experience in
+                  ReactJS, Javascript, MaterialUI,HTML,CSS
                 </p>
               </VerticalTimelineElement>
 
@@ -120,9 +129,9 @@ const Resume = () => {
                 </p>
               </VerticalTimelineElement>
             </VerticalTimeline>
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

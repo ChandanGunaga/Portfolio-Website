@@ -3,6 +3,7 @@ import "./header.css";
 import logo from "../pic/logo1.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import { motion } from "framer-motion";
 
 const Header = () => {
   window.addEventListener("scroll", function () {
@@ -10,10 +11,36 @@ const Header = () => {
     header.classList.toggle("active", window.scrollY > 100);
   });
   const [Mobile, setMobile] = useState(false);
+
+  const headerVariants = {
+    hidden: {
+      opacity: 0,
+      y: -50,
+      transition: {
+        type: "spring",
+        stiffness: 300,
+        damping: 140,
+      },
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 80,
+        delay: 1,
+      },
+    },
+  };
   return (
     <>
       <header className="header">
-        <div className="container d_flex">
+        <motion.div
+          variants={headerVariants}
+          initial="hidden"
+          whileInView="show"
+          className="container d_flex"
+        >
           <div className="logo">
             <img className="logo" src={logo} alt="" />
           </div>
@@ -60,7 +87,7 @@ const Header = () => {
               )}
             </button>
           </div>
-        </div>
+        </motion.div>
       </header>
     </>
   );

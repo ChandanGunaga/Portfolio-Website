@@ -1,7 +1,14 @@
-import React, { useState } from "react"
-import contact1 from "./contact1.png"
-import "./Contact.css"
-import SendIcon from '@mui/icons-material/Send';
+import React, { useState } from "react";
+import contact1 from "./contact1.png";
+import "./Contact.css";
+import SendIcon from "@mui/icons-material/Send";
+import { motion } from "framer-motion";
+import {
+  footerVariants,
+  staggerContainer,
+  textVariant,
+  textVariant2,
+} from "../../motion";
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -9,21 +16,22 @@ const Contact = () => {
     phone: "",
     email: "",
     subject: "",
-    message: "",})
+    message: "",
+  });
 
   const InputEvent = (event) => {
-    const { name, value } = event.target
+    const { name, value } = event.target;
 
     setData((preVal) => {
       return {
         ...preVal,
         [name]: value,
-      }
-    })
-  }
+      };
+    });
+  };
 
   const formSubmit = (event) => {
-    event.preventDefault()
+    event.preventDefault();
     alert(
       `My name is ${data.fullname}. 
 	My phone number is ${data.phone}. 
@@ -31,18 +39,25 @@ const Contact = () => {
 	My Subject on  ${data.subject}. 
 	Here is my message I want to say : ${data.message}. 
 	`
-    )
-  }
+    );
+  };
   return (
     <>
-      <section className='Contact' id='contact'>
-        <div className='container top'>
-          <div className='heading text-center'>
+      <motion.section
+        variants={staggerContainer}
+        initial="hidden"
+        // viewport={{ once: false, amount: 0.25 }}
+        whileInView="show"
+        className="Contact"
+        id="contact"
+      >
+        <div className="container top">
+          <motion.div variants={textVariant2} className="heading text-center">
             <h4>CONTACT</h4>
             <h1>Take a coffee & chat with me</h1>
-          </div>
+          </motion.div>
 
-          <div className='content flex'>
+          <div className="content flex">
             {/* <div className='left'>
               <div className='box box_shodow'>
                 <div className='img'>
@@ -70,40 +85,74 @@ const Contact = () => {
               </div>
             </div> */}
 
-            <div className='right '>
-              <form  action="https://formspree.io/f/mayzkqoq" method="POST">
-                <div className='same-row f_flex'>
-                  <div className='input row'>
+            <div className="right ">
+              <motion.form
+                variants={footerVariants}
+                action="https://formspree.io/f/mayzkqoq"
+                method="POST"
+              >
+                <div className="same-row f_flex">
+                  <motion.div variants={textVariant(0.7)} className="input row">
                     <span>Your Name</span>
-                    <input type='text' name='fullname' value={data.fullname} onChange={InputEvent} />
-                  </div>
-                  <div className='input row'>
+                    <input
+                      type="text"
+                      name="fullname"
+                      value={data.fullname}
+                      onChange={InputEvent}
+                    />
+                  </motion.div>
+                  <motion.div variants={textVariant(0.9)} className="input row">
                     <span>Phone Number </span>
-                    <input type='number' name='phone' value={data.phone} onChange={InputEvent} />
-                  </div>
+                    <input
+                      type="number"
+                      name="phone"
+                      value={data.phone}
+                      onChange={InputEvent}
+                    />
+                  </motion.div>
                 </div>
-                <div className='input'>
+                <motion.div variants={textVariant(1.1)} className="input">
                   <span>Email </span>
-                  <input type='email' name='email' value={data.email} onChange={InputEvent} />
-                </div>
-                <div className='input'>
+                  <input
+                    type="email"
+                    name="email"
+                    value={data.email}
+                    onChange={InputEvent}
+                  />
+                </motion.div>
+                <motion.div variants={textVariant(1.3)} className="input">
                   <span>Subject </span>
-                  <input type='text' name='subject' value={data.subject} onChange={InputEvent} />
-                </div>
-                <div className='input'>
+                  <input
+                    type="text"
+                    name="subject"
+                    value={data.subject}
+                    onChange={InputEvent}
+                  />
+                </motion.div>
+                <motion.div variants={textVariant(1.5)} className="input">
                   <span>Your Message</span>
-                  <textarea cols='30' rows='10' name='message' value={data.message} onChange={InputEvent}></textarea>
-                </div>
-                <button className="flex contactform_btn_shadow" type="submit">
-                  SEND MESSAGE &nbsp; <SendIcon/>
-                </button>
-              </form>
+                  <textarea
+                    cols="30"
+                    rows="10"
+                    name="message"
+                    value={data.message}
+                    onChange={InputEvent}
+                  ></textarea>
+                </motion.div>
+                <motion.button
+                  variants={textVariant(1.7)}
+                  className="flex contactform_btn_shadow"
+                  type="submit"
+                >
+                  SEND MESSAGE &nbsp; <SendIcon />
+                </motion.button>
+              </motion.form>
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

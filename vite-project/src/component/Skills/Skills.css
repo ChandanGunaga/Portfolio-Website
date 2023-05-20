@@ -17,7 +17,7 @@ h3 {
 }
 .skills .list {
   list-style: none;
-  width: 80%;
+
 }
 
 .list span {
@@ -26,9 +26,12 @@ h3 {
 .skill-wrapper{
   display: flex;
   gap: 12px;
+  padding: 0 2rem;
+  
 } 
 .left-item{
   padding: 2rem;
+  width: fit-content;
 }
 .devImg{
   object-fit: fill;
