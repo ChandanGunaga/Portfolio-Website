@@ -28,20 +28,20 @@ const Features = () => {
               </div>
             </motion.div>
             <div className="a-right">
-              <motion.div  variants={textVariant(0.5)} className="a-desc">
+              <motion.div  variants={textVariant(0.9)} className="a-desc">
                 &nbsp; &nbsp; &nbsp; As a ReactJS Developer and Software
                 Engineer with a year of experience, I specialize in building
                 robust, scalable and performant web applications. My proficiency
                 in ReactJS, data structures and algorithms, allows me to develop
                 complex applications that meet clients unique needs.
               </motion.div>
-              <motion.div variants={textVariant(0.7)} className="a-desc">
+              <motion.div variants={textVariant(1.3)} className="a-desc">
                 Proficient in using modern tools and technologies such as
                 ReactJS, Redux, TailwindCss, Material UI. Writing clean,
                 well-documented, and maintainable code, ensuring that my
                 applications are easy to understand and scale.
               </motion.div>
-              <motion.div variants={textVariant(0.9)} className="a-desc">
+              <motion.div variants={textVariant(1.7)} className="a-desc">
                 If you're looking for a ReactJS Developer and Software Engineer
                 who is passionate about creating exceptional web applications
                 and enjoys working in a fast-paced, dynamic environment, look no

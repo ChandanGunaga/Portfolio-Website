@@ -61,7 +61,7 @@ const Testimonial = () => {
           </motion.div>
           <div className="slide_button flex">
             <motion.button
-              variants={fadeIn("down", "tween", 0.6, 0.1)}
+              variants={fadeIn("down", "tween", 1.6, 0.1)}
               className="arrow_btn_shadow prev_btn"
               onClick={() => setIndex(index - 1)}
             >
@@ -69,7 +69,7 @@ const Testimonial = () => {
             </motion.button>
 
             <motion.button
-            variants={fadeIn("down", "tween", 0.8, 0.1)}
+            variants={fadeIn("down", "tween", 1.8, 0.1)}
               className="arrow_btn_shadow next_btn"
               onClick={() => setIndex(index + 1)}
             >

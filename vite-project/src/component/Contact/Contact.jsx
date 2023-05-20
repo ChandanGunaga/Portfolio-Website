@@ -92,7 +92,7 @@ const Contact = () => {
                 method="POST"
               >
                 <div className="same-row f_flex">
-                  <motion.div variants={textVariant(0.7)} className="input row">
+                  <motion.div variants={textVariant(1)} className="input row">
                     <span>Your Name</span>
                     <input
                       type="text"
@@ -101,7 +101,7 @@ const Contact = () => {
                       onChange={InputEvent}
                     />
                   </motion.div>
-                  <motion.div variants={textVariant(0.9)} className="input row">
+                  <motion.div variants={textVariant(1.5)} className="input row">
                     <span>Phone Number </span>
                     <input
                       type="number"
@@ -111,7 +111,7 @@ const Contact = () => {
                     />
                   </motion.div>
                 </div>
-                <motion.div variants={textVariant(1.1)} className="input">
+                <motion.div variants={textVariant(2)} className="input">
                   <span>Email </span>
                   <input
                     type="email"
@@ -120,7 +120,7 @@ const Contact = () => {
                     onChange={InputEvent}
                   />
                 </motion.div>
-                <motion.div variants={textVariant(1.3)} className="input">
+                <motion.div variants={textVariant(2.5)} className="input">
                   <span>Subject </span>
                   <input
                     type="text"
@@ -129,7 +129,7 @@ const Contact = () => {
                     onChange={InputEvent}
                   />
                 </motion.div>
-                <motion.div variants={textVariant(1.5)} className="input">
+                <motion.div variants={textVariant(3.0)} className="input">
                   <span>Your Message</span>
                   <textarea
                     cols="30"
@@ -140,7 +140,7 @@ const Contact = () => {
                   ></textarea>
                 </motion.div>
                 <motion.button
-                  variants={textVariant(1.7)}
+                  variants={textVariant(3.5)}
                   className="flex contactform_btn_shadow"
                   type="submit"
                 >

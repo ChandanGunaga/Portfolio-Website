@@ -24,17 +24,17 @@ const Skills = () => {
             className="left-item"
           >
             <ol className="list">
-              <motion.li variants={textVariant(0.5)} className="item">
+              <motion.li variants={textVariant(0.6)} className="item">
                 <h3> Programming Languages:</h3>
                 <span>C++,C, JavaScript, SQL,Solidity,Typescript</span>
               </motion.li>
-              <motion.li variants={textVariant(0.7)} className="item">
+              <motion.li variants={textVariant(1)} className="item">
                 <h3>Relevant Concepts:</h3>
                 <span className="skill-names">
                   Data Structures And Algorithms,OOPS, DBMS,CN
                 </span>
               </motion.li>
-              <motion.li variants={textVariant(0.9)} className="item">
+              <motion.li variants={textVariant(1.4)} className="item">
                 <h3>Knowledgeable Domains:</h3>
                 <span>
                   ReactJS, Redux,HTML,CSS/SCSS,Framer Motion,Tailwind, <br />
@@ -42,13 +42,13 @@ const Skills = () => {
                   Stack <br /> Firebase,REST API
                 </span>
               </motion.li>
-              <motion.li variants={textVariant(1.1)} className="item">
+              <motion.li variants={textVariant(1.8)} className="item">
                 <h3>Tools:</h3>
                 <span>
                   Linux, MacOS, Windows, Git ,Github , Jest Unit testing
                 </span>
               </motion.li>
-              <motion.li variants={textVariant(1.3)} className="item">
+              <motion.li variants={textVariant(2.2)} className="item">
                 <h3>Soft Skills and Interests:</h3>
                 <span>
                   Leading the team, Event Management, Public Speaking,Flautist
