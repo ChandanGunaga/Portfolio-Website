@@ -16,14 +16,14 @@ const Features = () => {
         id="features"
       >
         <div className="container">
-          <motion.div variants={textVariant2}  className="heading feat-h">
+          <motion.div variants={textVariant2}  className="heading text-center feat-h">
             <h4>INTRODUCTION</h4>
             <h1>Brief Intro</h1>
           </motion.div>
 
           <div className="a">
-            <motion.div variants={footerVariants} className="a-left">
-              <div className="box_shadow">
+            <motion.div variants={fadeIn("right", "tween", 0.4, 1)} className="a-left">
+              <div className="box_shadow a-img-cont">
                 <img src={img} alt="" className="a-img" />
               </div>
             </motion.div>

@@ -65,90 +65,81 @@
   position: relative;
   animation: scaleImage 5s linear infinite;
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
-
 }
-.hero-logo{
+.hero-logo {
   width: 70px;
   height: 70px;
-  
 }
-.lg1{
+.lg1 {
   position: absolute;
   top: 118px;
   left: -86px;
   animation: scaleImage 3s linear infinite;
 }
-.lg2{
+.lg2 {
   position: absolute;
   top: 318px;
   left: 86px;
   animation: rotate 3s linear infinite;
 }
-@keyframes rotate{
-
-  0%{
+@keyframes rotate {
+  0% {
     transform: rotateY(0deg) translateY(0px);
   }
-  50%{
+  50% {
     transform: rotateY(180deg) translateY(-15px);
-
   }
-  100%{
+  100% {
     transform: rotateY(360deg) translateY(0px);
-
   }
 }
-.lg3{
+.lg3 {
   position: absolute;
   top: 178px;
   left: 336px;
   animation: scaleImage 3s linear infinite;
 }
-.lg4{
+.lg4 {
   position: absolute;
   top: 158px;
   left: 186px;
   animation: scaleImage 3s linear infinite;
 }
-.lg5{
+.lg5 {
   position: absolute;
-  animation:dots 3s linear infinite ;
+  animation: dots 3s linear infinite;
   top: 418px;
   left: 286px;
 }
-.lg6{
+.lg6 {
   position: absolute;
   top: 10px;
   left: 96px;
-  animation:dots 3s linear infinite ;
+  animation: dots 3s linear infinite;
 }
-@keyframes dots{
-
-  0%{
+@keyframes dots {
+  0% {
     transform: translateY(0px);
   }
-  50%{
+  50% {
     transform: translateY(-20px);
-
   }
-  100%{
+  100% {
     transform: translateY(0px);
-
   }
 }
 
-.lg7{
+.lg7 {
   position: absolute;
   top: 118px;
   right: 86px;
   animation: scaleImage 3s linear infinite;
 }
-.lg8{
+.lg8 {
   position: absolute;
   bottom: 118px;
   left: -86px;
   animation: scaleImage 3s linear infinite;
-  
 }
 .hero .right_img img {
   position: absolute;
@@ -156,32 +147,38 @@
   right: 15%;
   width: 510px;
 }
+
+
 @media (max-width: 768px) {
   .hero .right,
   .hero .left {
     width: 100%;
     /* margin-left: 20px; */
   }
-
+.hero{
+  padding: 0 10px;
+}
   .hero .f_flex {
     flex-direction: column;
     flex-direction: column-reverse;
   }
- 
+  .hero_btn {
+    margin-top: 4%;
+  }
 }
 
-@media (max-width: 968px){
+@media (max-width: 968px) {
   .hero .right_img {
     width: 100%;
     height: 54vh;
     display: none;
   }
-  .hero-logo{
+  .hero-logo {
     display: none;
   }
 }
 
-.contact_btn_shadow{
+.contact_btn_shadow {
   width: 70px;
   height: 70px;
   padding: 18px 5px;
@@ -199,7 +196,7 @@
   transform: translateY(-2px);
 }
 
-.resume_btn_shadow{
+.resume_btn_shadow {
   padding: 15px 20px;
   display: flex;
   justify-content: center;
@@ -214,7 +211,7 @@
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
 }
-.typewriter-head{
+.typewriter-head {
   height: 130px;
 }
 .resume_btn_shadow:hover {
@@ -222,22 +219,42 @@
   color: white;
   transform: translateY(-2px);
 }
-.contact-links{
+.contact-links {
   text-decoration: none;
   color: inherit;
 }
 
-@keyframes scaleImage{
-
-  0%{
+@keyframes scaleImage {
+  0% {
     transform: scale(1);
   }
-  50%{
+  50% {
     transform: scale(1.1);
-
   }
-  100%{
+  100% {
     transform: scale(1);
+  }
+}
 
+
+@media (max-width: 1203px ) {
+  .contact_btn_shadow {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+  }
+}
+
+@media (max-width:1127px){
+  .hero_btn{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_btn_shadow{
+    width: 55px;
+    height: 55px;
+  }
+  .hero_btn button{
+    margin-right: 25px;
   }
 }
