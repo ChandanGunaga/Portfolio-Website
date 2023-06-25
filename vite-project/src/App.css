@@ -161,6 +161,10 @@ footer p {
     gap: 30px;
     padding: 1rem 2rem;
   }
+  .heading h1 {
+    font-size: 56px;
+    color: #3c3e41;
+  }
 }
 @media (max-width: 500px) {
   .grid {
